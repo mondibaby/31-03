@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x="baby";
+        var telugu=parseInt(prompt());
+        var english=parseInt(prompt());
+        var social=parseInt(prompt());
+        var drawing=parseInt(prompt());
+
+        var sum=add(telugu,english,social,drawing);
+        var avg=sum/4;
+        var gr=grade(avg);
+        console.log(avg);
+        console.log(x);
+
+        function add(t,e,s,d){
+            var c=t+e+s+d;
+            return c;
+        
+        }
+        function grade(g){
+            switch(true)
+            {
+                case g>=90:console.log("a grade");break;
+                case g>=80:console.log("b grade");break;
+                case g>=70:console.log("c grade");break;
+                case g>=60:console.log("d grade");break;
+                case g>=50:console.log("e grade");break;
+              
+                
+            }
+        }
+    </script>
+</body>
+</html>

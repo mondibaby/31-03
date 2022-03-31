@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Name:</label>
+    <input id="no_input"><br><br>
+    <button onclick="arm()">Check</button>
+    <script>
+function arm(){
+    var arm=0, a,b,c,d,num;
+    num=Number(document.getElementById("no_input").value);
+    temp=num;
+    while(temp>0){
+        a=temp%10;
+        temp=parseInt(temp/10);
+        arm=arm+a*a*a;
+    }
+    if(arm==num){
+        alert("Armstrong Number");
+    }
+    else{
+        alert("no armstrong number")
+    }
+}
+
+    </script>
+</body>
+</html>
